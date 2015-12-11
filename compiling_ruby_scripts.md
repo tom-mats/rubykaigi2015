@@ -27,9 +27,16 @@ rubyスクリプトは複数のISeqにより構成される．
 
 ## Interface
 
-```RubyVM::InstructionSequence.load_iseq```
-必要なもの(ロードできるデータがあれば)をロードしてIseqを生成する．
-```RubyVM::InstructionSequence.to_binary```シリアライズ
-```RubyVM::InstructionSequence.load__from_binary``` デシリアライズ
+* ```RubyVM::InstructionSequence.load_iseq```
+
+  必要なもの(ロードできるデータがあれば)をロードしてIseqを生成する．
+
+* ```RubyVM::InstructionSequence.to_binary```
+
+  シリアライズ
+
+* ```RubyVM::InstructionSequence.load_from_binary```
+
+  デシリアライズ
 
 * ライブラリをインストールする時にバイナリ化するのが一番可能性が高い
